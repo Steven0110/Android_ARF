@@ -20,7 +20,6 @@ import javax.net.ssl.HttpsURLConnection;
 
 public class ServicioAWS extends AsyncTask<Void,Void,String>  {
 
-    //variables hilo
     private Context http;
     public String resultado_api = "";
     public String respuesta_api = "";
