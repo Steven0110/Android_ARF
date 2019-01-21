@@ -8,7 +8,6 @@ import android.widget.Toast;
 public class SessionActivity extends AppCompatActivity {
 
     public void SessionActivity(){
-
     }
 
     @Override

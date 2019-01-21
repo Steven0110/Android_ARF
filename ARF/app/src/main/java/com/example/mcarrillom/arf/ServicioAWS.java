@@ -62,7 +62,7 @@ public class ServicioAWS extends AsyncTask<Void,Void,String>  {
         try {
             URL url = new URL(URLendPont);
             JSONObject paramsPost = new JSONObject();
-            System.out.println("post :"+this.usuario+" "+this.password);
+            //System.out.println("post :"+this.usuario+" "+this.password);
             paramsPost.put("username", this.usuario);
             paramsPost.put("password", this.password);
             HttpsURLConnection urlConnection = (HttpsURLConnection) url.openConnection();

@@ -22,32 +22,31 @@ public class LoginActivity extends AppCompatActivity {
         btnAcceso = findViewById(R.id.btn_acceso_login);
         btnLogout = findViewById(R.id.btn_salir_login);
         correoUsr = findViewById(R.id.correo_usr_login);
-        passUsr = findViewById(R.id.pwd_usr_login);
-
+        passUsr   = findViewById(R.id.pwd_usr_login);
+        //acceder
         btnAcceso.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                System.out.println(correoUsr.getText().toString()+passUsr.getText().toString());
+                //System.out.println(correoUsr.getText().toString()+passUsr.getText().toString());
                 consumirServicioAWS();
             }
         });
-
+        //regresar
         btnLogout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 finish();
             }
         });
-
     }
 
-    public void imprimirMensaje(String mensaje){
+    /**public void imprimirMensaje(String mensaje){
         Context context = getApplicationContext();
         CharSequence text = mensaje;
         int duration = Toast.LENGTH_SHORT;
         Toast toast = Toast.makeText(context, text, duration);
         toast.show();
-    }
+    }*/
 
     public void iniciarSession() {
         Intent intent = new Intent(this, SessionActivity.class);
@@ -61,5 +60,4 @@ public class LoginActivity extends AppCompatActivity {
         //System.out.println(respuesta);
         iniciarSession();
     }
-
 }
